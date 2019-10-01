@@ -48,7 +48,7 @@ def hit?(initial_round_total)
     new_total = new_card + initial_round_total
     #binding.pry
     elsif response == "s"
-    return(initial_round_total)
+    return initial_round_total
     elsif response != "h" && response != "s"
     prompt_user()
     invalid_command()
