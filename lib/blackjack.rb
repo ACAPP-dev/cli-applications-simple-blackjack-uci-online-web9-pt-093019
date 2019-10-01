@@ -53,7 +53,7 @@ def hit?(initial_round_total)
     
     invalid_command()
     prompt_user()
-    # return initial_round_total
+    return initial_round_total
   end   
   
 end
