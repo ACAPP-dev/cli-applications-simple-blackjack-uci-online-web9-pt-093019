@@ -48,7 +48,7 @@ def hit?(initial_round_total)
     new_total = new_card + initial_round_total
     #binding.pry
     elsif response == "s"
-    return initial_round_total
+    return initial_round_total && response
     elsif response != "h" && response != "s"
     prompt_user()
     invalid_command()
@@ -67,7 +67,16 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner
+def runner(response)
   # code runner here
+  welcome()
+  initial_round_total = initial_round()
+  hit?(initial_round_total)
+  if response == "s"
+  hit?(initial_round_total)
+elsif response == "h"
+  
+  
+  
 end
     
