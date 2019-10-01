@@ -71,10 +71,9 @@ def runner()
   # code runner here
   welcome()
   initial_round_total = initial_round()
-  hit?(initial_round_total)
-  if response == "s"
-  prompt_user()
-  response = get_user_input()
+  latest_total = hit?(initial_round_total)
+  until latest_total > 21 do
+    
   
 elsif response == "h"
   new_card = deal_card()
