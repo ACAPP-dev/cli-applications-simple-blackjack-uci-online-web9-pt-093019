@@ -73,15 +73,9 @@ def runner()
   initial_round_total = initial_round()
   latest_total = hit?(initial_round_total)
   until latest_total > 21 do
-    
+    latest_total = hits?(initial_round_total)
   
-elsif response == "h"
-  new_card = deal_card()
-    new_total = new_card + initial_round_total
-    
-  else
-  end
-    #binding.pry
+
   
   
 end
