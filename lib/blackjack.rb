@@ -71,7 +71,6 @@ def runner()
   # code runner here
   welcome()
   initial_round_total = initial_round()
-  latest_total = hit?(initial_round_total)
   until latest_total > 21 do
     latest_total = hits?(initial_round_total)
   
