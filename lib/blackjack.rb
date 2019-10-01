@@ -50,10 +50,10 @@ def hit?(initial_round_total)
     elsif response == "s"
     return initial_round_total
     elsif response != "h" && response != "s"
-    
     invalid_command()
     prompt_user()
-    return initial_round_total
+    response = get_user_input
+    
   end   
   
 end
