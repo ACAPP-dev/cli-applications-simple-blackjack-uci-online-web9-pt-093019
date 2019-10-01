@@ -72,7 +72,7 @@ def runner()
   welcome()
   latest_total = initial_round()
   until latest_total > 21 do
-    latest_total = hits?(latest_total)
+    latest_total = hit?(latest_total)
     display_card_total(latest_total)
   end
   end_game(latest_total)
